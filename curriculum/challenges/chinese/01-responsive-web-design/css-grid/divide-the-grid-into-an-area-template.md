@@ -1,6 +1,6 @@
 ---
 id: 5a94fe0569fb03452672e45c
-title: 将网格划分为区域模板
+title: Divide the Grid Into an Area Template
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/cLLpGAy'
 forumTopicId: 301130
@@ -9,7 +9,7 @@ dashedName: divide-the-grid-into-an-area-template
 
 # --description--
 
-你可以将网格中的一些单元格组合成一个<dfn>区域（area）</dfn>，并为该区域指定一个自定义名称。可以通过给容器加上 `grid-template-areas` 来实现：
+You can group cells of your grid together into an <dfn>area</dfn> and give the area a custom name. Do this by using `grid-template-areas` on the container like this:
 
 ```css
 grid-template-areas:
@@ -18,21 +18,23 @@ grid-template-areas:
   "footer footer footer";
 ```
 
-上面的代码将顶部三个单元格合并成一个名为 `header` 的区域，将底部三个单元格合并为一个名为 `footer` 的区域，并在中间行创建了两个区域：`advert` 和 `content`。**注意：**在代码中，每个单词代表一个网格单元格，每对引号代表一行。除了自定义标签，你还能使用句点（`.`）来表示一个空单元格。
+The code above merges the top three cells together into an area named `header`, the bottom three cells into a `footer` area, and it makes two areas in the middle row; `advert` and `content`. **Note:** Every word in the code represents a cell and every pair of quotation marks represent a row. In addition to custom labels, you can use a period (`.`) to designate an empty cell in the grid.
 
 # --instructions--
 
-请放置区域模板，让名为 `advert` 的区域变成空单元格。
+Place the area template so that the cell labeled `advert` becomes an empty cell.
 
 # --hints--
 
-class 为 `container` 的元素应具有 `grid-template-areas` 属性，在其属性值中，应使用 `.` 代替 `.advert`。
+`container` class should have a `grid-template-areas` property similar to the preview but with`.` instead of the `advert` area.
 
 ```js
 assert(
-  code.match(
-    /.container\s*?{[\s\S]*grid-template-areas\s*?:\s*?"\s*?header\s*?header\s*?header\s*?"\s*?"\s*?.\s*?content\s*?content\s*?"\s*?"\s*?footer\s*?footer\s*?footer\s*?"\s*?;[\s\S]*}/gi
-  )
+  __helpers
+    .removeCssComments(code)
+    .match(
+      /.container\s*?{[\s\S]*grid-template-areas\s*?:\s*?"\s*?header\s*?header\s*?header\s*?"\s*?"\s*?.\s*?content\s*?content\s*?"\s*?"\s*?footer\s*?footer\s*?footer\s*?"\s*?;[\s\S]*}/gi
+    )
 );
 ```
 

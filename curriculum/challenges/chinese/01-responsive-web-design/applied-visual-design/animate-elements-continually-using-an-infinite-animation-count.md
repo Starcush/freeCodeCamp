@@ -1,6 +1,6 @@
 ---
 id: 587d78a8367417b2b2512ae3
-title: 使用无限的动画计数制作永不停止的动画
+title: Animate Elements Continually Using an Infinite Animation Count
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cVJDVfq'
 forumTopicId: 301041
@@ -9,19 +9,19 @@ dashedName: animate-elements-continually-using-an-infinite-animation-count
 
 # --description--
 
-之前的关卡里介绍了一些动画属性以及 `@keyframes` 规则的用法。还有一个常用的动画属性是 `animation-iteration-count`，这个属性允许你控制动画循环的次数。下面是一个例子：
+The previous challenges covered how to use some of the animation properties and the `@keyframes` rule. Another animation property is the `animation-iteration-count`, which allows you to control how many times you would like to loop through the animation. Here's an example:
 
 `animation-iteration-count: 3;`
 
-在这里动画会在运行 3 次后停止，如果想让动画一直运行，可以把值设置成 infinite。
+In this case the animation will stop after running 3 times, but it's possible to make the animation run continuously by setting that value to `infinite`.
 
 # --instructions--
 
-把 `animation-iteration-count` 属性值改成 infinite，以使右边的球持续跳跃。
+To keep the ball bouncing on the right on a continuous loop, change the `animation-iteration-count` property to `infinite`.
 
 # --hints--
 
-`animation-iteration-count` 属性值应该为 infinite。
+The `animation-iteration-count` property should have a value of `infinite`.
 
 ```js
 assert($('#ball').css('animation-iteration-count') == 'infinite');

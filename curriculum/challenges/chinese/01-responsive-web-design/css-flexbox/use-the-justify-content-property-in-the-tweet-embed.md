@@ -1,6 +1,6 @@
 ---
 id: 587d78ac367417b2b2512af7
-title: 在推文中使用 justify-content 属性
+title: Use the justify-content Property in the Tweet Embed
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVaDAv/c43GgTa'
 forumTopicId: 301115
@@ -9,15 +9,21 @@ dashedName: use-the-justify-content-property-in-the-tweet-embed
 
 # --description--
 
-上一项挑战展示了 `justify-content` 属性的作用。如果我们想对齐推文内的子元素，可以把 `justify-content` 应用在 `.profile-name` 上。
+The last challenge showed an example of the `justify-content` property. For the tweet embed, this property can be applied to align the items in the `.profile-name` element.
 
 # --instructions--
 
-请在 header 中的 `.profile-name` 元素添加 CSS 属性 `justify-content`，把它的属性值设为上面挑战提到的任意可用值。
+Add the CSS property `justify-content` to the header's `.profile-name` element and set the value to any of the options from the last challenge.
 
 # --hints--
 
-`.profile-name` 元素的 `justify-content` 可选用以下属性值：`center`、`flex-start`、`flex-end`、`space-between`、`space-around`。
+Your `.follow-btn` should be rendered on the page. Be sure to turn off any extensions such as ad blockers.
+
+```js
+assert($('.follow-btn').length > 0 && $('.follow-btn').css('display') !== 'none');
+```
+
+The `.profile-name` element should have the `justify-content` property set to any of these values: `center`, `flex-start`, `flex-end`, `space-between`, `space-around`, or `space-evenly`.
 
 ```js
 assert(

@@ -1,6 +1,6 @@
 ---
 id: 587d781d367417b2b2512ac5
-title: 设置段落的 line-height
+title: Set the line-height of Paragraphs
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/crVWdcv'
 forumTopicId: 301070
@@ -9,15 +9,15 @@ dashedName: set-the-line-height-of-paragraphs
 
 # --description--
 
-CSS 提供 `line-height` 属性来设置行间的距离。行高，顾名思义，可以用来设置每行文字所占据的垂直空间。
+CSS offers the `line-height` property to change the height of each line in a block of text. As the name suggests, it changes the amount of vertical space that each line of text gets.
 
 # --instructions--
 
-给 `p` 标签添加 `line-height` 属性并赋值 25px。
+Add a `line-height` property to the `p` tag and set it to 25px.
 
 # --hints--
 
-`p` 标签的 `line-height` 属性值应为 `25px`。
+Your code should set the `line-height` of the `p` tag to 25 pixels.
 
 ```js
 assert($('p').css('line-height') == '25px');

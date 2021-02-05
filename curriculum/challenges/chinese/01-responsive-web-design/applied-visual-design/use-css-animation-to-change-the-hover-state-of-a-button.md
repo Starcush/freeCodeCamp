@@ -1,6 +1,6 @@
 ---
 id: 587d78a7367417b2b2512ae0
-title: 使用CSS动画更改按钮的悬停状态
+title: Use CSS Animation to Change the Hover State of a Button
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cg4vZAa'
 forumTopicId: 301073
@@ -9,9 +9,9 @@ dashedName: use-css-animation-to-change-the-hover-state-of-a-button
 
 # --description--
 
-你可以在按钮悬停时使用 `@keyframes` 改变按钮的颜色。
+You can use CSS `@keyframes` to change the color of a button in its hover state.
 
-下面是在图片悬停时改变图片宽度的例子：
+Here's an example of changing the width of an image on hover:
 
 ```html
 <style>
@@ -32,19 +32,19 @@ dashedName: use-css-animation-to-change-the-hover-state-of-a-button
 
 # --instructions--
 
-注意 `ms` 代表毫秒，1000ms 等于 1s。
+Note that `ms` stands for milliseconds, where 1000ms is equal to 1s.
 
-使用 `@keyframes` 来改变 `button` 元素的 `background-color`，使其在悬停时变成 `#4791d0`。`@keyframes` 规则应该只有一个 `100%` 条目。
+Use CSS `@keyframes` to change the `background-color` of the `button` element so it becomes `#4791d0` when a user hovers over it. The `@keyframes` rule should only have an entry for `100%`.
 
 # --hints--
 
-`@keyframes` 规则的 `animation-name` 应该是 background-color。
+The @keyframes rule should use the `animation-name` background-color.
 
 ```js
 assert(code.match(/@keyframes\s+?background-color\s*?{/g));
 ```
 
-在 `@keyframes` 为 `100%` 的位置，应将 `background-color` 改成 `#4791d0`。
+There should be one rule under `@keyframes` that changes the `background-color` to `#4791d0` at 100%.
 
 ```js
 assert(code.match(/100%\s*?{\s*?background-color:\s*?#4791d0;\s*?}/gi));

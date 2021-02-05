@@ -1,6 +1,6 @@
 ---
 id: 587d78a5367417b2b2512ada
-title: 使用CSS Transform scale 属性在悬停时缩放元素
+title: Use the CSS Transform scale Property to Scale an Element on Hover
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cyLPJuM'
 forumTopicId: 301077
@@ -9,9 +9,9 @@ dashedName: use-the-css-transform-scale-property-to-scale-an-element-on-hover
 
 # --description--
 
-`transform` 属性有很多函数可以调用，可以对元素进行调整大小、移动、旋转、翻转等操作。当使用伪类选取元素的指定状态（如 `:hover`）时，我们可以通过 `transform` 属性非常方便地给元素添加交互。
+The `transform` property has a variety of functions that let you scale, move, rotate, skew, etc., your elements. When used with pseudo-classes such as `:hover` that specify a certain state of an element, the `transform` property can easily add interactivity to your elements.
 
-下面是当用户悬停在 `p` 元素时，段落大小缩放到原始大小 2.1 倍的例子：
+Here's an example to scale the paragraph elements to 2.1 times their original size when a user hovers over them:
 
 ```css
 p:hover {
@@ -19,15 +19,15 @@ p:hover {
 }
 ```
 
-**注意：**给 `div` 元素添加 transform 也会影响这个 div 包裹的子元素。
+**Note:** Applying a transform to a `div` element will also affect any child elements contained in the div.
 
 # --instructions--
 
-通过伪类，给 `div` 的 `hover` 状态添加 `transform` 属性，使其当鼠标悬停时大小缩放到原始大小的 1.1 倍。
+Add a CSS rule for the `hover` state of the `div` and use the `transform` property to scale the `div` element to 1.1 times its original size when a user hovers over it.
 
 # --hints--
 
-`div` 元素在悬停时大小应该缩放到原始大小的 1.1 倍。
+The size of the `div` element should scale 1.1 times when the user hovers over it.
 
 ```js
 assert(code.match(/div:hover\s*?{\s*?transform:\s*?scale\(1\.1\);/gi));

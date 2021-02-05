@@ -1,6 +1,6 @@
 ---
 id: 587d78ae367417b2b2512aff
-title: 使用 order 属性重新排列子元素
+title: Use the order Property to Rearrange Items
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pVaDAv/cMbvNAG'
 forumTopicId: 301116
@@ -9,21 +9,21 @@ dashedName: use-the-order-property-to-rearrange-items
 
 # --description--
 
-`order` 属性告诉 CSS flex 容器里子元素的顺序。默认情况下，项目排列顺序与源 HTML 文件中顺序相同。`order` 属性接受数字作为参数，可以使用负数。
+The `order` property is used to tell CSS the order of how flex items appear in the flex container. By default, items will appear in the same order they come in the source HTML. The property takes numbers as values, and negative numbers can be used.
 
 # --instructions--
 
-请给 `#box-1` 和 `#box-2` 添加 CSS 属性 `order`，并将 `#box-1` 的`order` 属性值设为 `2`，`#box-2` 的属性值设为 `1`。
+Add the CSS property `order` to both `#box-1` and `#box-2`. Give `#box-1` a value of `2` and give `#box-2` a value of `1`.
 
 # --hints--
 
-`#box-1` 元素应具有 `order` 属性，其属性值应为 `2`。
+The `#box-1` element should have the `order` property set to a value of `2`.
 
 ```js
 assert($('#box-1').css('order') == '2');
 ```
 
-`#box-2` 元素应具有 `order` 属性，其属性值应为 `1`。
+The `#box-2` element should have the `order` property set to a value of `1`.
 
 ```js
 assert($('#box-2').css('order') == '1');

@@ -1,6 +1,6 @@
 ---
 id: 587d78a3367417b2b2512ace
-title: 使用 float 属性将元素左浮动或右浮动
+title: Push Elements Left or Right with the float Property
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c2MDqu2'
 forumTopicId: 301066
@@ -9,21 +9,21 @@ dashedName: push-elements-left-or-right-with-the-float-property
 
 # --description--
 
-接下来要介绍的定位机制并不是 `position` 属性的选项，而是通过元素的 `float` 属性来设置。浮动元素不在文档流中，它向左或向右浮动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。通常需要用 `width` 属性来指定浮动元素占据的水平空间。
+The next positioning tool does not actually use `position`, but sets the `float` property of an element. Floating elements are removed from the normal flow of a document and pushed to either the `left` or `right` of their containing parent element. It's commonly used with the `width` property to specify how much horizontal space the floated element requires.
 
 # --instructions--
 
-设置 `#left` 元素的 `float` 属性值为 `left`，设置 `#right` 元素的 `float` 属性值为 `right`。使这两个元素按两列布局，`section` 和 `aside` 左右排列。
+The given markup would work well as a two-column layout, with the `section` and `aside` elements next to each other. Give the `#left` item a `float` of `left` and the `#right` item a `float` of `right`.
 
 # --hints--
 
-id 为 `left` 的元素的 `float` 属性值应为 `left`。
+The element with id `left` should have a `float` value of `left`.
 
 ```js
 assert($('#left').css('float') == 'left');
 ```
 
-id 为 `right` 的元素的 `float` 属性值应为 `right`。
+The element with id `right` should have a `float` value of `right`.
 
 ```js
 assert($('#right').css('float') == 'right');

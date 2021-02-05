@@ -1,6 +1,6 @@
 ---
 id: 5a9036ee38fddaf9a66b5d36
-title: 使用 grid-row-gap 创建多行之间的间距
+title: Create a Row Gap using grid-row-gap
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/cPbJ2Cv'
 forumTopicId: 301125
@@ -9,15 +9,15 @@ dashedName: create-a-row-gap-using-grid-row-gap
 
 # --description--
 
-和上个挑战在两列之间添加间距一样，我们还可以用 `grid-row-gap` 设置行间距。
+You can add a gap in between the rows of a grid using `grid-row-gap` in the same way that you added a gap in between columns in the previous challenge.
 
 # --instructions--
 
-请为网格中的行添加高度为 `5px` 的间距。
+Create a gap for the rows that is `5px` tall.
 
 # --hints--
 
-class 为 `container` 的元素应具有 `grid-row-gap` 属性且属性值应为 `5px`。
+`container` class should have a `grid-row-gap` property that has the value of `5px`.
 
 ```js
 assert(
@@ -47,7 +47,7 @@ assert(
     grid-template-rows: 1fr 1fr 1fr;
     /* Only change code below this line */
 
-    
+
     /* Only change code above this line */
   }
 </style>

@@ -1,6 +1,6 @@
 ---
 id: 587d781b367417b2b2512abb
-title: 使用 hr 标签创建水平线
+title: Create a Horizontal Line Using the hr Element
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/c3bR8t7'
 forumTopicId: 301049
@@ -9,25 +9,23 @@ dashedName: create-a-horizontal-line-using-the-hr-element
 
 # --description--
 
-术语：Horizontal Rule => hr => 水平线。
-
-你可以用 `hr` 标签来创建一条宽度撑满父元素的水平线。这种水平分割线一般用来表示内容主题的改变，或在视觉上将文档分隔成几个部分。
+You can use the `hr` tag to add a horizontal line across the width of its containing element. This can be used to define a change in topic or to visually separate groups of content.
 
 # --instructions--
 
-在卡片标题元素 `h4` 下方添加一个 `hr` 标签。
+Add an `hr` tag underneath the `h4` which contains the card title.
 
-**注意：**HTML 中的 `hr` 是自闭合标签，所以我们不需要为它添加结束标签。
+**Note:** In HTML, `hr` is a self-closing tag, and therefore doesn't need a separate closing tag.
 
 # --hints--
 
-应存在一个 `hr` 标签。
+Your code should add an `hr` tag to the markup.
 
 ```js
 assert($('hr').length == 1);
 ```
 
-`hr` 标签应该在标题和段落之间。
+The `hr` tag should come between the title and the paragraph.
 
 ```js
 assert(code.match(/<\/h4>\s*?<hr(>|\s*?\/>)\s*?<p>/gi));

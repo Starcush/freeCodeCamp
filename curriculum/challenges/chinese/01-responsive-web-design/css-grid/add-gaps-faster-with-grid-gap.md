@@ -1,23 +1,23 @@
 ---
 id: 5a9036ee38fddaf9a66b5d37
-title: 使用 grid-gap 为网格添加间距
+title: Add Gaps Faster with grid-gap
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/ca2qVtv'
-forumTopicId: 1301118
+forumTopicId: 301118
 dashedName: add-gaps-faster-with-grid-gap
 ---
 
 # --description--
 
-`grid-gap` 属性是前两个挑战中出现的 `grid-row-gap` 和 `grid-column-gap` 的简写属性，它更方便使用。如果 `grid-gap` 只有一个值，那么这个值表示行与行之间、列与列之间的间距均为这个值。如果 `grid-gap` 有两个值，那么第一个值表示行间距，第二个值表示列间距。
+`grid-gap` is a shorthand property for `grid-row-gap` and `grid-column-gap` from the previous two challenges that's more convenient to use. If `grid-gap` has one value, it will create a gap between all rows and columns. However, if there are two values, it will use the first one to set the gap between the rows and the second value for the columns.
 
 # --instructions--
 
-请使用 `grid-gap` 属性设置行间距为 `10px`、列间距为 `20px`。
+Use `grid-gap` to introduce a `10px` gap between the rows and `20px` gap between the columns.
 
 # --hints--
 
-class 为 `container` 的元素应具有 `grid-gap` 属性，并将行间距设置为 `10px`，列间距设置为 `20px`。
+`container` class should have a `grid-gap` property that introduces `10px` gap between the rows and `20px` gap between the columns.
 
 ```js
 assert(
@@ -49,7 +49,7 @@ assert(
     grid-template-rows: 1fr 1fr 1fr;
     /* Only change code below this line */
 
-    
+
     /* Only change code above this line */
   }
 </style>

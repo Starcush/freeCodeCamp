@@ -1,6 +1,6 @@
 ---
 id: 58a7a6ebf9a6318348e2d5aa
-title: 修改动画的填充模式
+title: Modify Fill Mode of an Animation
 challengeType: 0
 videoUrl: 'https://scrimba.com/c/cVJDmcE'
 forumTopicId: 301064
@@ -9,19 +9,19 @@ dashedName: modify-fill-mode-of-an-animation
 
 # --description--
 
-太棒了，但是现在还不完美。注意动画在 `500ms` 之后重置了，所以按钮又变成了之前的颜色。而我们想要的效果是按钮在悬停时始终高亮。
+That's great, but it doesn't work right yet. Notice how the animation resets after `500ms` has passed, causing the button to revert back to the original color. You want the button to stay highlighted.
 
-为此，我们可以通过把 `animation-fill-mode` 设置成 `forwards` 来实现。`animation-fill-mode` 指定了在动画结束时元素的样式：
+This can be done by setting the `animation-fill-mode` property to `forwards`. The `animation-fill-mode` specifies the style applied to an element when the animation has finished. You can set it like so:
 
 `animation-fill-mode: forwards;`
 
 # --instructions--
 
-修改 `button:hover` 的 `animation-fill-mode`，使按钮悬停时保持高亮。
+Set the `animation-fill-mode` property of `button:hover` to `forwards` so the button stays highlighted when a user hovers over it.
 
 # --hints--
 
-`button:hover` 应该有一个值为 `forwards` 的 `animation-fill-mode` 的属性。
+`button:hover` should have a `animation-fill-mode` property with a value of `forwards`.
 
 ```js
 assert(

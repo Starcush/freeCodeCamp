@@ -1,6 +1,6 @@
 ---
 id: 5a94fdf869fb03452672e45b
-title: 使用 align-items 垂直对齐所有项目
+title: Align All Items Vertically using align-items
 challengeType: 0
 videoUrl: 'https://scrimba.com/p/pByETK/ckzPeUv'
 forumTopicId: 301121
@@ -9,15 +9,15 @@ dashedName: align-all-items-vertically-using-align-items
 
 # --description--
 
-对网格容器使用 `align-items` 属性可以让网格中所有的网格项沿竖直方向对齐。
+Using the `align-items` property on a grid container will set the vertical alignment for all the items in our grid.
 
 # --instructions--
 
-请使用 `align-items` 属性将所有网格项移动到单元格的末尾。
+Use it now to move all the items to the end of each cell.
 
 # --hints--
 
-class 为 `container` 的元素应具有 `align-items` 属性且属性值应为 `end`。
+`container` class should have a `align-items` property that has the value of `end`.
 
 ```js
 assert(
@@ -48,7 +48,7 @@ assert(
     grid-gap: 10px;
     /* Only change code below this line */
 
-    
+
     /* Only change code above this line */
   }
 </style>
